@@ -8,10 +8,10 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
 -- These are some examples, uncomment them if you want to see them work!
-map("n", "<C-f>", function()
+map("n", "<C-t>", function()
   require("nvchad.term").toggle { pos = "sp", size = 0.4 }
 end, { desc = "Toogle Terminal Horizontal" })
-map("t", "<C-f>", function()
+map("t", "<C-t>", function()
   require("nvchad.term").toggle { pos = "sp" }
 end, { desc = "Toogle Terminal Horizontal" })
 map("n", "\\", "<cmd>:vsplit <CR>", { desc = "Vertical Split" })
